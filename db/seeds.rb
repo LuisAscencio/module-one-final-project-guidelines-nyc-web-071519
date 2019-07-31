@@ -65,21 +65,6 @@ Rocket.create(
 )
 
 
-
-# ASTRONAUTS
-def create_astronaut
-    Astronaut.create(
-        name: astronaut_name,
-        age: astronaut_age,
-        favorite_rocket: favorite_rocket
-    )
-end
-
-
-
-
-
-
 # LAUNCHES
 
 # "Trailblazer",                        0 MISSION NAME
@@ -93,26 +78,24 @@ end
 # "Republic of the Marshall Islands"    8 LAUNCH STATE
 
 
+launches = CSV.read("resources/launches.csv")
+index = 1
+while index < 93
 
-# launches = CSV.read("resources/launches.csv")
-# index = 1
-# while index < 93
-
-#     Launch.create(
-#         # id: integer, 
-#         # user_id: integer, 
-#         # rocket_id: integer, 
-#         mission_name: launches[index][0],
-#         upcoming: launches[index][1],
-#         launch_date: launches[index][2],
-#         rocket_name: launches[index][3],
-#         payload: launches[index][4],
-#         launch_site: launches[index][5],
-#         launch_state: launches[index][8]
-#         # launch_success: boolean
-#     )
-#     index += 1
-# end
+    Launch.create(
+        # user_id: integer, 
+        # rocket_id: integer, 
+        mission_name: launches[index][0],
+        upcoming: launches[index][1],
+        launch_date: launches[index][2],
+        rocket_name: launches[index][3],
+        payload: launches[index][4],
+        launch_site: launches[index][5],
+        launch_state: launches[index][8]
+        # launch_success: boolean
+    )
+    index += 1
+end
 
 
 # SEARCHES
