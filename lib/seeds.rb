@@ -72,6 +72,27 @@ Rocket.create(
 # LAUNCHES
 launches = CSV.read("resources/launches.csv")
 
+index = 1
+while index <93
+
+    Launch.create(
+        # id: integer, 
+        # user_id: integer, 
+        # rocket_id: integer, 
+        mission_name: launches[index][0],
+        upcoming: launches[index][1],
+        launch_date: launches[index][2],
+        rocket_name: launches[index][3],
+        payload: launches[index][4],
+        launch_site: launches[index][5],
+        launch_state: launches[index][8]
+        # launch_success: boolean
+    )
+    index+=1
+    
+end
+
+
 # "Trailblazer",                        0 MISSION NAME
 # "FALSE",                              1 UPCOMING
 # "2-Aug-08",                           2 LAUNCH DATE
