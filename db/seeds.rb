@@ -65,8 +65,17 @@ Rocket.create(
 )
 
 
+
+
+
+
+
+
 # USERS
 
+# astronaut.map do |astro|
+#      Astronaut.create(name:astronaut_name, age: astronaut_age, favorite_rocket: favorite_rocket)
+# end
 
 
 # LAUNCHES

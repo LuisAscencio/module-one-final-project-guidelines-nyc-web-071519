@@ -1,13 +1,14 @@
+require "pry"
 require_relative '../config/environment'
 require_relative "../lib/cli"
 
-welcome
+run
+
               
-astronaut_name
-astronaut_age
-favorite_rocket
 
 
 
+# binding.pry
+# 0
 
-# puts "HELLO WORLD"
+
