@@ -35,7 +35,7 @@ db   8D 88      88   88 Y8b  d8 88.     .8P  Y8.
 
 
 ROCKET
-   end
+end
 
 
 
@@ -55,57 +55,101 @@ ROCKET
 
 
 
-      def astronaut_name
+         def astronaut_name
          puts "Please enter your name:"
-          gets.chomp
-      end
+         
+        gets.chomp
+         end
 
 
-      def astronaut_age
-         puts "Please enter your age:"
-       gets.chomp
-      end
+        def astronaut_age
+            puts "Please enter your age:"
+        gets.chomp
+        end
 
 
  
-def fav_rocket
+    def fav_rocket
     
 
 
-   puts <<-FR
-   SpaceX has 4 rockets:
+        puts <<-FR
+        SpaceX has 4 rockets:
 
-   1.- Falcon 1
-   2.- Falcon 9
-   3.- Falcon Heavy
-   4.- BFR
+        1.- Falcon 1
+        2.- Falcon 9
+        3.- Falcon Heavy
+        4.- BFR
 
-   Use numbers 1 to 4 to pick your favorite rocket:
-   FR
+        Use numbers 1 to 4 to pick your favorite rocket:
+        FR
 
-    # favorite_rocket= gets.chomp
-    # if favorite_rocket == 1
-    #   favorite_rocket = Rocket.first.rocket_name
-    # elsif favorite_rocket == 2
-    #   favorite_rocket == Rocket.second.rocket_name
-    # elsif favorite_rocket == 3
-    #   favorite_rocket = Rocket.third.rocket_name
-    # else favorite_rocket == 4
-    #   favorite_rocket = Rocket.fourth.rocket_name
-    # end
+      
 
 
 
 
+      fav_rock = gets.chomp
 
-# Astronaut.create(name:astronaut_name, age: astronaut_age, favorite_rocket: favorite_rocket)
-   
-puts "Hello #{astronaut_name}"
+     
+     if fav_rock == "1"
+       fav_rock = Rocket.first.rocket_name
+     elsif fav_rock == "2"
+       fav_rock =Rocket.second.rocket_name
+      elsif fav_rock == "3"
+       fav_rock = Rocket.third.rocket_name
+      elsif fav_rock == "4"
+       fav_rock = Rocket.fourth.rocket_name
+      else 
+        puts <<-LB
 
 
-# binding.pry
-# 0
 
 
+        
+        d8888b. d888888b  .o88b. db   dD       .d8b.              
+        88  `8D   `88'   d8P  Y8 88 ,8P'      d8' `8b             
+        88oodD'    88    8P      88,8P        88ooo88             
+        88~~~      88    8b      88`8b        88~~~88             
+        88        .88.   Y8b  d8 88 `88.      88   88             
+        88      Y888888P  `Y88P' YP   YD      YP   YP             
+                                                                  
+                                                                  
+        d8b   db db    db .88b  d88. d8888b. d88888b d8888b.      
+        888o  88 88    88 88'YbdP`88 88  `8D 88'     88  `8D      
+        88V8o 88 88    88 88  88  88 88oooY' 88ooooo 88oobY'      
+        88 V8o88 88    88 88  88  88 88~~~b. 88~~~~~ 88`8b        
+        88  V888 88b  d88 88  88  88 88   8D 88.     88 `88.      
+        VP   V8P ~Y8888P' YP  YP  YP Y8888P' Y88888P 88   YD      
+                                                                  
+                                                                  
+         db      d888888b  .d88b.         j88D       db db db     
+        o88      `~~88~~' .8P  Y8.       j8~88       88 88 88     
+         88         88    88    88      j8' 88       YP YP YP     
+         88         88    88    88      V88888D                   
+         88         88    `8b  d8'          88       db db db     
+         VP         YP     `Y88P'           VP       YP YP YP   
+         
+         
+         
+         LB
+
+        fav_rocket
+
+      end
+
+    end
+
+
+def create_astronaut
+
+    Astronaut.create(name:astronaut_name, age: astronaut_age, favorite_rocket: fav_rocket)
+    
 end
+
+   
+
+
+
+
 

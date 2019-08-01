@@ -87,7 +87,7 @@ while index <93
     Launch.create(
         # id: integer, 
         # user_id: integer, 
-        # rocket_id: integer, 
+        rocket_id: integer, 
         mission_name: launches[index][0],
         upcoming: launches[index][1],
         launch_date: launches[index][2],

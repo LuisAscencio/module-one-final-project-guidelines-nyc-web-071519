@@ -1,8 +1,10 @@
 require "pry"
 require_relative '../config/environment'
-require_relative "../lib/cli"
+# require_relative "../lib/cli"
 
-run
+
+welcome
+create_astronaut
 
               
 
