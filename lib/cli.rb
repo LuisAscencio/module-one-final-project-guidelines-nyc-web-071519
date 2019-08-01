@@ -72,25 +72,41 @@ def favorite_rocket
     # binding.pry
 end
 
-def create_search
-    Search.create(
-        astronaut_id: 
-        future_launch_date:
-        future_launch_site:
-        favorite_rocket: fav_rocket
-        name:
-    )
+def future_launches
+    puts "Would you like to see all future launches?"
+    puts "y/n"
+    input = gets.chomp
+    if input == "y"
+        # get future flights in a table
+        puts Launch.future_missions # mission names
+        puts Launch.future_sites # launch site name
+        puts Launch.future_states # launch site state
+    else 
+        "BYE!"
+        # show search
+    end
 end
+
+# binding.pry
+# 0
+
+
+
+
+# def create_search
+#     Search.create(
+#         astronaut_id: 
+#         future_launch_date: 
+#         future_launch_site:
+#         favorite_rocket: favorite_rocket,
+#         name: astronaut_name
+#     )
+# end
+
 
 
 # def book_flight
 #     puts "Here are all of the upcoming flights."
 
 # end
-
-
-
-
-
-
 

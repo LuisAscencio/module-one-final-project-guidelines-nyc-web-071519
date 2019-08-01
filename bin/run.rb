@@ -4,7 +4,7 @@ require_relative "../lib/cli"
 # welcome
     
 create_astronaut
-book_flight
+future_launches
 
 
 
