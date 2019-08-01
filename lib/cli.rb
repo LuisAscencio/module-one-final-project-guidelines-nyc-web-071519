@@ -169,16 +169,37 @@ def future_launches
 end
 
 
+    
+
+
 
 def book_launch
     puts "pick launch"
     index=0
     user_input= gets.chomp.to_i
     index=user_input
+
     table = Terminal::Table.new :title => "Future Launchess", :headings => ["Id", "Date", 'Mission', 'Site', "State", "Rocket"] do |t|
      t << [index, Launch.future_dates[index], Launch.future_missions[index], Launch.future_sites[index], Launch.future_states[index], Launch.future_rockets[index]]
 
     end
+    date = Launch.future_dates[index]
+    mission = Launch.future_missions[index]
+    sites = Launch.future_sites[index]
+    state = Launch.future_states[index]
+    rocket = Launch.future_rockets[index]
+
+    Search.create(
+    astronaut_id: Astronaut.last.id,
+    future_launch_date: date,
+    future_launch_site: sites,
+    favorite_rocket: Astronaut.last.favorite_rocket,
+    name: Astronaut.last.name
+
+
+    )
+    # binding.pry
+
     puts table
 end
 
