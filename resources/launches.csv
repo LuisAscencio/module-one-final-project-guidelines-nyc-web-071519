@@ -1,93 +1,106 @@
 ﻿mission_name,upcoming,launch_date,rocket_name,payload,launch_site_name,launch_site_name_long,launch_success,launch_state
-FalconSat,FALSE,25-Mar-06,Falcon 1,FalconSAT-2,Kwajalein Atoll,Kwajalein Atoll Omelek Island,FALSE,Republic of the Marshall Islands
-DemoSat,FALSE,21-Mar-07,Falcon 1,DemoSAT,Kwajalein Atoll,Kwajalein Atoll Omelek Island,FALSE,Republic of the Marshall Islands
-Trailblazer,FALSE,2-Aug-08,Falcon 1,Trailblazer,Kwajalein Atoll,Kwajalein Atoll Omelek Island,FALSE,Republic of the Marshall Islands
-RatSat,FALSE,28-Sep-08,Falcon 1,RatSat,Kwajalein Atoll,Kwajalein Atoll Omelek Island,TRUE,Republic of the Marshall Islands
-RazakSat,FALSE,13-Jul-09,Falcon 1,RazakSAT,Kwajalein Atoll,Kwajalein Atoll Omelek Island,TRUE,Republic of the Marshall Islands
-Falcon 9 Test Flight,FALSE,4-Jun-10,Falcon 9,Dragon Qualification Unit,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-COTS 1,FALSE,8-Dec-10,Falcon 9,COTS Demo Flight 1,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-COTS 2,FALSE,22-May-12,Falcon 9,COTS Demo Flight 2,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CRS-1,FALSE,8-Oct-12,Falcon 9,CRS-1,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CRS-2,FALSE,1-Mar-13,Falcon 9,CRS-2,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CASSIOPE,FALSE,29-Sep-13,Falcon 9,CASSIOPE,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-SES-8,FALSE,3-Dec-13,Falcon 9,SES-8,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Thaicom 6,FALSE,6-Jan-14,Falcon 9,Thaicom 6,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CRS-3,FALSE,18-Apr-14,Falcon 9,CRS-3,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-OG-2 Mission 1,FALSE,14-Jul-14,Falcon 9,Orbcomm-OG2-M1,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-AsiaSat 8,FALSE,5-Aug-14,Falcon 9,AsiaSat 8,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-AsiaSat 6,FALSE,7-Sep-14,Falcon 9,AsiaSat 6,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CRS-4,FALSE,21-Sep-14,Falcon 9,CRS-4,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CRS-5,FALSE,10-Jan-15,Falcon 9,CRS-5,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-DSCOVR,FALSE,11-Feb-15,Falcon 9,DSCOVR,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-ABS-3A / Eutelsat 115W B,FALSE,2-Mar-15,Falcon 9,ABS-3A,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CRS-6,FALSE,14-Apr-15,Falcon 9,CRS-6,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-TürkmenÄlem 52°E / MonacoSAT,FALSE,27-Apr-15,Falcon 9,TürkmenÄlem 52°E / MonacoSAT,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CRS-7,FALSE,28-Jun-15,Falcon 9,CRS-7,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,FALSE,Florida
-OG-2 Mission 2,FALSE,22-Dec-15,Falcon 9,Orbcomm-OG2-M2,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Jason 3,FALSE,17-Jan-16,Falcon 9,Jason-3,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-SES-9,FALSE,4-Mar-16,Falcon 9,SES-9,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CRS-8,FALSE,8-Apr-16,Falcon 9,CRS-8,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-JCSAT-2B,FALSE,6-May-16,Falcon 9,JCSAT-2B,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Thaicom 8,FALSE,27-May-16,Falcon 9,Thaicom 8,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-ABS-2A / Eutelsat 117W B,FALSE,15-Jun-16,Falcon 9,ABS-2A,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CRS-9,FALSE,18-Jul-16,Falcon 9,CRS-9,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-JCSAT-16,FALSE,14-Aug-16,Falcon 9,JCSAT-16,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Amos-6,FALSE,1-Sep-16,Falcon 9,Amos-6,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,FALSE,Florida
-Iridium NEXT Mission 1,FALSE,14-Jan-17,Falcon 9,Iridium NEXT 1,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-CRS-10,FALSE,19-Feb-17,Falcon 9,CRS-10,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-EchoStar 23,FALSE,16-Mar-17,Falcon 9,EchoStar 23,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-SES-10,FALSE,30-Mar-17,Falcon 9,SES-10,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-NROL-76,FALSE,1-May-17,Falcon 9,NROL-76,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-Inmarsat-5 F4,FALSE,15-May-17,Falcon 9,Inmarsat-5 F4,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-CRS-11,FALSE,3-Jun-17,Falcon 9,CRS-11,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-BulgariaSat-1,FALSE,23-Jun-17,Falcon 9,BulgariaSat-1,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-Iridium NEXT Mission 2,FALSE,25-Jun-17,Falcon 9,Iridium NEXT 2,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-Intelsat 35e,FALSE,5-Jul-17,Falcon 9,Intelsat 35e,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-CRS-12,FALSE,14-Aug-17,Falcon 9,CRS-12,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-FormoSat-5,FALSE,24-Aug-17,Falcon 9,FormoSat-5,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-Boeing X-37B OTV-5,FALSE,7-Sep-17,Falcon 9,X-37B OTV-5,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-Iridium NEXT Mission 3,FALSE,9-Oct-17,Falcon 9,Iridium NEXT 3,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-SES-11 / Echostar 105,FALSE,11-Oct-17,Falcon 9,SES-11 / Echostar 105,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-KoreaSat 5A,FALSE,30-Oct-17,Falcon 9,KoreaSat 5A,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-CRS-13,FALSE,15-Dec-17,Falcon 9,CRS-13,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Iridium NEXT Mission 4,FALSE,22-Dec-17,Falcon 9,Iridium NEXT 4,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-ZUMA,FALSE,7-Jan-18,Falcon 9,ZUMA,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-SES-16 / GovSat-1,FALSE,31-Jan-18,Falcon 9,GovSat-1,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Falcon Heavy Test Flight,FALSE,6-Feb-18,Falcon Heavy,Tesla Roadster,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-Paz / Starlink Demo,FALSE,22-Feb-18,Falcon 9,Paz,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-Hispasat 30W-6,FALSE,6-Mar-18,Falcon 9,Hispasat 30W-6,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Iridium NEXT Mission 5,FALSE,30-Mar-18,Falcon 9,Iridium NEXT 5,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-CRS-14,FALSE,2-Apr-18,Falcon 9,CRS-14,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-TESS,FALSE,18-Apr-18,Falcon 9,TESS,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Bangabandhu-1,FALSE,11-May-18,Falcon 9,Bangabandhu-1,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-Iridium NEXT Mission 6,FALSE,22-May-18,Falcon 9,Iridium NEXT 6,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-SES-12,FALSE,4-Jun-18,Falcon 9,SES-12,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-CRS-15,FALSE,29-Jun-18,Falcon 9,CRS-15,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Telstar 19V,FALSE,22-Jul-18,Falcon 9,Telstar 19V,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Iridium NEXT Mission 7,FALSE,25-Jul-18,Falcon 9,Iridium NEXT 7,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-Merah Putih,FALSE,7-Aug-18,Falcon 9,Telkom-4,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Telstar 18V,FALSE,10-Sep-18,Falcon 9,Telstar 18V,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-SAOCOM 1A,FALSE,7-Oct-18,Falcon 9,SAOCOM 1A,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-Es’hail 2,FALSE,15-Nov-18,Falcon 9,Es’hail 2,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
-SSO-A,FALSE,3-Dec-18,Falcon 9,SSO-A,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-CRS-16,FALSE,5-Dec-18,Falcon 9,CRS-16,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-GPS III SV01,FALSE,23-Dec-18,Falcon 9,GPS III SV01,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
-Iridium NEXT Mission 8,FALSE,11-Jan-19,Falcon 9,Iridium NEXT 8,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
-Nusantara Satu (PSN-6) / GTO-1 / Beresheet,TRUE,21-Feb-19,Falcon 9,Nusantara Satu (PSN-6),CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
-CCtCap Demo Mission 1,TRUE,2-Mar-19,Falcon 9,CCtCap Demo Mission 1,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
-ArabSat 6A,TRUE,6-Mar-19,Falcon Heavy,ArabSat 6A,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
-"RADARSAT C-1, C-2, C-3",TRUE,28-Feb-19,Falcon 9,"RADARSAT C-1, C-2, C-3",VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California
-CRS-17,TRUE,11-Apr-19,Falcon 9,CRS-17,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
-STP-2,TRUE,29-Apr-19,Falcon Heavy,STP-2,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
-Crew Dragon In Flight Abort Test,TRUE,31-May-19,Falcon 9,Crew Dragon In Flight Abort Test,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
-Amos-17,TRUE,31-Mar-19,Falcon 9,Amos-17,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
-SARah 1,TRUE,31-Dec-18,Falcon 9,SARah 1,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California
-CRS-18,TRUE,7-Jul-19,Falcon 9,CRS-18,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
-CCtCap Demo Mission 2,TRUE,30-Jun-19,Falcon 9,CCtCap Demo Mission 2,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
-JCSat 18 / Kacific 1,TRUE,30-Jun-19,Falcon 9,JCSat 18 / Kacific 1,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
-USCV-1 (NASA Crew Flight 1),TRUE,31-Mar-19,Falcon 9,USCV-1 (NASA Crew Flight 1),KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
-SAOCOM 1B,TRUE,31-Aug-19,Falcon 9,SAOCOM 1B,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California
-GPS IIIA-3,TRUE,30-Sep-19,Falcon 9,GPS IIIA-3,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
-CRS-19,TRUE,14-Oct-19,Falcon 9,CRS-19,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
-ALINA,TRUE,30-Sep-19,Falcon 9,ALINA,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
-GTO-2,TRUE,30-Sep-19,Falcon 9,GTO-2,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+FalconSat,FALSE,"March 25, 2006",Falcon 1,FalconSAT-2,Kwajalein Atoll,Kwajalein Atoll Omelek Island,FALSE,Republic of the Marshall Islands
+DemoSat,FALSE,"March 21, 2007",Falcon 1,DemoSAT,Kwajalein Atoll,Kwajalein Atoll Omelek Island,FALSE,Republic of the Marshall Islands
+Trailblazer,FALSE,"August 2, 2008",Falcon 1,Trailblazer,Kwajalein Atoll,Kwajalein Atoll Omelek Island,FALSE,Republic of the Marshall Islands
+RatSat,FALSE,"September 28, 2008",Falcon 1,RatSat,Kwajalein Atoll,Kwajalein Atoll Omelek Island,TRUE,Republic of the Marshall Islands
+RazakSat,FALSE,"July 13, 2009",Falcon 1,RazakSAT,Kwajalein Atoll,Kwajalein Atoll Omelek Island,TRUE,Republic of the Marshall Islands
+Falcon 9 Test Flight,FALSE,"June 4, 2010",Falcon 9,Dragon Qualification Unit,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+COTS 1,FALSE,"December 8, 2010",Falcon 9,COTS Demo Flight 1,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+COTS 2,FALSE,"May 22, 2012",Falcon 9,COTS Demo Flight 2,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CRS-1,FALSE,"October 8, 2012",Falcon 9,CRS-1,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CRS-2,FALSE,"March 1, 2013",Falcon 9,CRS-2,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CASSIOPE,FALSE,"September 29, 2013",Falcon 9,CASSIOPE,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+SES-8,FALSE,"December 3, 2013",Falcon 9,SES-8,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Thaicom 6,FALSE,"January 6, 2014",Falcon 9,Thaicom 6,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CRS-3,FALSE,"April 18, 2014",Falcon 9,CRS-3,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+OG-2 Mission 1,FALSE,"July 14, 2014",Falcon 9,Orbcomm-OG2-M1,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+AsiaSat 8,FALSE,"August 5, 2014",Falcon 9,AsiaSat 8,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+AsiaSat 6,FALSE,"September 7, 2014",Falcon 9,AsiaSat 6,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CRS-4,FALSE,"September 21, 2014",Falcon 9,CRS-4,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CRS-5,FALSE,"January 10, 2015",Falcon 9,CRS-5,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+DSCOVR,FALSE,"February 11, 2015",Falcon 9,DSCOVR,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+ABS-3A / Eutelsat 115W B,FALSE,"March 2, 2015",Falcon 9,ABS-3A,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CRS-6,FALSE,"April 14, 2015",Falcon 9,CRS-6,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+TürkmenÄlem 52°E / MonacoSAT,FALSE,"April 27, 2015",Falcon 9,TürkmenÄlem 52°E / MonacoSAT,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CRS-7,FALSE,"June 28, 2015",Falcon 9,CRS-7,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,FALSE,Florida
+OG-2 Mission 2,FALSE,"December 22, 2015",Falcon 9,Orbcomm-OG2-M2,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Jason 3,FALSE,"January 17, 2016",Falcon 9,Jason-3,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+SES-9,FALSE,"March 4, 2016",Falcon 9,SES-9,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CRS-8,FALSE,"April 8, 2016",Falcon 9,CRS-8,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+JCSAT-2B,FALSE,"May 6, 2016",Falcon 9,JCSAT-2B,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Thaicom 8,FALSE,"May 27, 2016",Falcon 9,Thaicom 8,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+ABS-2A / Eutelsat 117W B,FALSE,"June 15, 2016",Falcon 9,ABS-2A,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CRS-9,FALSE,"July 18, 2016",Falcon 9,CRS-9,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+JCSAT-16,FALSE,"August 14, 2016",Falcon 9,JCSAT-16,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Amos-6,FALSE,"September 1, 2016",Falcon 9,Amos-6,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,FALSE,Florida
+Iridium NEXT Mission 1,FALSE,"January 14, 2017",Falcon 9,Iridium NEXT 1,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+CRS-10,FALSE,"February 19, 2017",Falcon 9,CRS-10,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+EchoStar 23,FALSE,"March 16, 2017",Falcon 9,EchoStar 23,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+SES-10,FALSE,"March 30, 2017",Falcon 9,SES-10,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+NROL-76,FALSE,"May 1, 2017",Falcon 9,NROL-76,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+Inmarsat-5 F4,FALSE,"May 15, 2017",Falcon 9,Inmarsat-5 F4,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+CRS-11,FALSE,"June 3, 2017",Falcon 9,CRS-11,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+BulgariaSat-1,FALSE,"June 23, 2017",Falcon 9,BulgariaSat-1,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+Iridium NEXT Mission 2,FALSE,"June 25, 2017",Falcon 9,Iridium NEXT 2,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+Intelsat 35e,FALSE,"July 5, 2017",Falcon 9,Intelsat 35e,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+CRS-12,FALSE,"August 14, 2017",Falcon 9,CRS-12,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+FormoSat-5,FALSE,"August 24, 2017",Falcon 9,FormoSat-5,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+Boeing X-37B OTV-5,FALSE,"September 7, 2017",Falcon 9,X-37B OTV-5,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+Iridium NEXT Mission 3,FALSE,"October 9, 2017",Falcon 9,Iridium NEXT 3,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+SES-11 / Echostar 105,FALSE,"October 11, 2017",Falcon 9,SES-11 / Echostar 105,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+KoreaSat 5A,FALSE,"October 30, 2017",Falcon 9,KoreaSat 5A,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+CRS-13,FALSE,"December 15, 2017",Falcon 9,CRS-13,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Iridium NEXT Mission 4,FALSE,"December 22, 2017",Falcon 9,Iridium NEXT 4,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+ZUMA,FALSE,"January 7, 2018",Falcon 9,ZUMA,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+SES-16 / GovSat-1,FALSE,"January 31, 2018",Falcon 9,GovSat-1,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Falcon Heavy Test Flight,FALSE,"February 6, 2018",Falcon Heavy,Tesla Roadster,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+Paz / Starlink Demo,FALSE,"February 22, 2018",Falcon 9,Paz,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+Hispasat 30W-6,FALSE,"March 6, 2018",Falcon 9,Hispasat 30W-6,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Iridium NEXT Mission 5,FALSE,"March 30, 2018",Falcon 9,Iridium NEXT 5,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+CRS-14,FALSE,"April 2, 2018",Falcon 9,CRS-14,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+TESS,FALSE,"April 18, 2018",Falcon 9,TESS,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Bangabandhu-1,FALSE,"May 11, 2018",Falcon 9,Bangabandhu-1,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+Iridium NEXT Mission 6,FALSE,"May 22, 2018",Falcon 9,Iridium NEXT 6,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+SES-12,FALSE,"June 4, 2018",Falcon 9,SES-12,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+CRS-15,FALSE,"June 29, 2018",Falcon 9,CRS-15,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Telstar 19V,FALSE,"July 22, 2018",Falcon 9,Telstar 19V,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Iridium NEXT Mission 7,FALSE,"July 25, 2018",Falcon 9,Iridium NEXT 7,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+Merah Putih,FALSE,"August 7, 2018",Falcon 9,Telkom-4,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Telstar 18V,FALSE,"September 10, 2018",Falcon 9,Telstar 18V,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+SAOCOM 1A,FALSE,"October 7, 2018",Falcon 9,SAOCOM 1A,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+Es’hail 2,FALSE,"November 15, 2018",Falcon 9,Es’hail 2,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,TRUE,Florida
+SSO-A,FALSE,"December 3, 2018",Falcon 9,SSO-A,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+CRS-16,FALSE,"December 5, 2018",Falcon 9,CRS-16,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+GPS III SV01,FALSE,"December 23, 2018",Falcon 9,GPS III SV01,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,TRUE,Florida
+Iridium NEXT Mission 8,FALSE,"January 11, 2019",Falcon 9,Iridium NEXT 8,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,TRUE,California
+Nusantara Satu (PSN-6) / GTO-1 / Beresheet,FALSE,"February 21, 2019",Falcon 9,Nusantara Satu (PSN-6),CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+CCtCap Demo Mission 1,FALSE,"March 2, 2019",Falcon 9,CCtCap Demo Mission 1,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+ArabSat 6A,FALSE,"March 6, 2019",Falcon Heavy,ArabSat 6A,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+"RADARSAT C-1, C-2, C-3",FALSE,"February 28, 2019",Falcon 9,"RADARSAT C-1, C-2, C-3",VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California
+CRS-17,FALSE,"April 11, 2019",Falcon 9,CRS-17,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+STP-2,FALSE,"April 29, 2019",Falcon Heavy,STP-2,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+Crew Dragon In Flight Abort Test,FALSE,"May 31, 2019",Falcon 9,Crew Dragon In Flight Abort Test,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+Amos-17,FALSE,"March 31, 2019",Falcon 9,Amos-17,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+SARah 1,FALSE,"December 31, 2018",Falcon 9,SARah 1,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California
+CRS-18,FALSE,"July 7, 2019",Falcon 9,CRS-18,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+CCtCap Demo Mission 2,FALSE,"June 30, 2019",Falcon 9,CCtCap Demo Mission 2,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+JCSat 18 / Kacific 1,FALSE,"June 30, 2019",Falcon 9,JCSat 18 / Kacific 1,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+USCV-1 (NASA Crew Flight 1),FALSE,"March 31, 2019",Falcon 9,USCV-1 (NASA Crew Flight 1),KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+SAOCOM 1B,TRUE,"August 31, 2019",Falcon 9,SAOCOM 1B,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California
+GPS IIIA-3,TRUE,"September 30, 2019",Falcon 9,GPS IIIA-3,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+CRS-19,TRUE,"October 14, 2019",Falcon 9,CRS-19,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+ALINA,TRUE,"September 30, 2019",Falcon 9,ALINA,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+GTO-2,TRUE,"September 30, 2019",Falcon 9,GTO-2,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+Mars,TRUE,"January 1, 2020",BFR,Manned Crew,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+Life on Europa,TRUE,"March 14, 2020",BFR,Manned Crew,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+Ceres,TRUE,"May 23, 2020",BFR,Manned Crew,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+Ganymede,TRUE,"May 31, 2020",BFR,Manned Crew,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+Resupply Mars,TRUE,"February 14, 2021",Falcon 9,Manned Crew,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+Moon scientific Expedition,TRUE,"March 16, 2021",BFR,Manned Crew,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+Mars,TRUE,"May 23, 2021",BFR,Manned Crew,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California
+Rsupply Europa,TRUE,"June 7, 2021",Falcon 9,Manned Crew,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+Ganymede,TRUE,"August 8, 2021",Falcon Heavy,Manned Crew,KSC LC 39A,Kennedy Space Center Historic Launch Complex 39A,null,Florida
+Resupply Moon,TRUE,"September 25, 2021",Falcon Heavy,Manned Crew,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+Ceres,TRUE,"October 31, 2022",BFR,Manned Crew,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
+Mars,TRUE,"January 1, 2022",BFR,Manned Crew,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California
+Mars,TRUE,"January 1, 2023",BFR,Manned Crew,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California

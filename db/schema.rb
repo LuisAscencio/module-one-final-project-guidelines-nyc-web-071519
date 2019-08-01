@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190731171543) do
+ActiveRecord::Schema.define(version: 20190801140618) do
 
   create_table "astronauts", force: :cascade do |t|
     t.string  "name"
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 20190731171543) do
     t.string  "future_launch_date"
     t.string  "future_launch_site"
     t.string  "favorite_rocket"
+    t.string  "name"
   end
 
 end

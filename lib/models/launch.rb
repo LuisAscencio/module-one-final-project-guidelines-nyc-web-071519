@@ -3,8 +3,8 @@ class Launch < ActiveRecord::Base
     belongs_to :rocket
 
     # Method to find all launches for this rocket
-    def self.all_launches(r_name)
-        Launch.where(rocket_name: r_name)
+    def self.all_launches(fav_rocket)
+        Launch.where(rocket_name: fav_rocket)
     end
 
     # get future flights
@@ -12,5 +12,7 @@ class Launch < ActiveRecord::Base
         Launch.where(upcoming: true)
     end
 
-    
+
+
+
 end

@@ -53,24 +53,44 @@ def favorite_rocket
         2. Falcon 9
         3. Falcon Heavy
         4. BFR
-    Use numbers 1 to 4 to pick your favorite rocket
+    Use numbers 1 through 4 to pick your favorite rocket
     FR
     fav_rocket = gets.chomp
 
     # binding.pry
 
     if fav_rocket == 1
-        fav_rocket = Rocket.first.rocket_name
+        fav_rocket = "Falcon 1"
     elsif fav_rocket == 2
-        fav_rocket = Rocket.second.rocket_name
+        fav_rocket = "Falcon 9"
     elsif fav_rocket == 3
-        fav_rocket = Rocket.third.rocket_name
+        fav_rocket = "Falcon Heavy"
     else fav_rocket == 4
-        fav_rocket = Rocket.fourth.rocket_name
+        fav_rocket = "BFR"
     end
 
     # binding.pry
 end
+
+def create_search
+    Search.create(
+        astronaut_id: 
+        future_launch_date:
+        future_launch_site:
+        favorite_rocket: fav_rocket
+        name:
+    )
+end
+
+
+# def book_flight
+#     puts "Here are all of the upcoming flights."
+
+# end
+
+
+
+
 
 
 

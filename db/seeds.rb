@@ -80,7 +80,8 @@ Rocket.create(
 
 launches = CSV.read("resources/launches.csv")
 index = 1
-while index < 93
+
+while index < launches.size
 
     Launch.create(
         # user_id: integer, 
@@ -96,12 +97,6 @@ while index < 93
     )
     index += 1
 end
-
-
-# SEARCHES
-
-
-
 
 
 binding.pry
