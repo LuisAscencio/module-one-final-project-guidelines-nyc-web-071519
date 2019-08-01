@@ -195,13 +195,26 @@ def book_launch
     future_launch_site: sites,
     favorite_rocket: Astronaut.last.favorite_rocket,
     name: Astronaut.last.name
-
-
-    )
+)
     # binding.pry
 
     puts table
 end
+
+
+def delet_search
+    puts "delete? y/n"
+    input = gets.chomp
+    if input == "y" 
+        Search.last.delete
+    else
+        puts "bye"
+    end
+end
+
+
+
+
 
 # binding.pry
 # 0
