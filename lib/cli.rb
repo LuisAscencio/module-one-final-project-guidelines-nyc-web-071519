@@ -28,6 +28,8 @@
 #     WELCOME
 # end
 
+
+
 def create_astronaut
     Astronaut.create(
         name: astronaut_name,
@@ -35,6 +37,9 @@ def create_astronaut
         favorite_rocket: favorite_rocket
     )
 end
+
+
+
     
 def astronaut_name
     puts "Please enter your name:"
@@ -59,16 +64,19 @@ def favorite_rocket
 
     # binding.pry
 
-    if fav_rocket == 1
-        fav_rocket = "Falcon 1"
-    elsif fav_rocket == 2
-        fav_rocket = "Falcon 9"
-    elsif fav_rocket == 3
-        fav_rocket = "Falcon Heavy"
-    else fav_rocket == 4
-        fav_rocket = "BFR"
+    case fav_rocket
+    when '1' 
+        fav_rocket = Rocket.first.rocket_name
+    when '2'
+        fav_rocket = Rocket.second.rocket_name
+    when '3'
+        fav_rocket = Rocket.third.rocket_name
+    when '4'
+        fav_rocket = Rocket.fourth.rocket_name
+    else
+        puts 'Invalid entry'
     end
-
+    
     # binding.pry
 end
 
@@ -78,16 +86,22 @@ def future_launches
     input = gets.chomp
     if input == "y"
         # get future flights in a table
-        mission = Launch.future_missions # mission names
-        site = Launch.future_sites # launch site name
-        state = Launch.future_states # launch site state
+        # puts Launch.future_missions # mission names
+        # puts Launch.future_sites # launch site name
+        # puts Launch.future_states # launch site state
+        # puts Launch.future_dates # launch date
 
+        # mission = Launch.future_missions # mission names
+        # site = Launch.future_sites # launch site name
+        # state = Launch.future_states # launch site state
+        # date = Launch.future_dates # launch date
 
-        puts mission # mission names
-        puts site # launch site name
-        puts state # launch site state
+        # puts mission # mission names
+        # puts site # launch site name
+        # puts state # launch site state
+        # puts date # launch date
     else 
-        "BYE!"
+        puts "BYE!"
         # ask if they want to see their search
     end
 end
@@ -95,18 +109,18 @@ end
 # binding.pry
 # 0
 
-
-
-
 # def create_search
 #     Search.create(
-#         astronaut_id: 
-#         future_launch_date: 
-#         future_launch_site:
+#         # astronaut_id: get_id
+#         future_launch_date: date,
+#         future_launch_site: site,
 #         favorite_rocket: favorite_rocket,
 #         name: astronaut_name
 #     )
 # end
+
+
+
 
 
 

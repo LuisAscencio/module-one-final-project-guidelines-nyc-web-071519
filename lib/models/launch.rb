@@ -32,5 +32,11 @@ class Launch < ActiveRecord::Base
         end
     end
 
+    def self.future_dates
+        all_dates = Launch.where(upcoming: true)
+        all_dates.map do |launch|
+            launch.launch_date
+        end
+    end
 
 end

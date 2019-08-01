@@ -5,6 +5,7 @@ require_relative "../lib/cli"
     
 create_astronaut
 future_launches
+create_search
 
 
 
