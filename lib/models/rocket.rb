@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'pry'
 require 'terminal-table'
 
@@ -117,5 +118,18 @@ end
 
 
 
+=======
+class Rocket < ActiveRecord::Base
+    has_many :launches
+    has_many :astronauts, through: :launches
+    
+    # Get rocket info
+    # def rocket_info
+    #     puts "#{Rocket.first.rocket_name}'s first 
+    #         flight was on #{Rocket.first.first_flight}. 
+    #         The cost per launch of this rocket is 
+    #         $#{Rocket.first.cost}."
+    # end
+>>>>>>> 01e07bd762431d33dd91f5563cb23e80b9016b7b
 
 end
