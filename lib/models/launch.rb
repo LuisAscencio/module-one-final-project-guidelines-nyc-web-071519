@@ -36,4 +36,22 @@ class Launch < ActiveRecord::Base
     end
 
 
+    def self.future_dates
+        all_states = Launch.where(upcoming: true)
+        all_states.map do |launch|
+            launch.launch_date
+        end
+    end
+    
+
+
+    def self.future_rockets
+        all_states = Launch.where(upcoming: true)
+        all_states.map do |launch|
+            launch.rocket_name
+        end
+    end
+    
+
+
 end

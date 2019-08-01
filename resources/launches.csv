@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 mission_name,upcoming,launch_date,rocket_name,payload,launch_site_name,launch_site_name_long,launch_success,launch_state
 FalconSat,FALSE,25-Mar-06,Falcon 1,FalconSAT-2,Kwajalein Atoll,Kwajalein Atoll Omelek Island,FALSE,Republic of the Marshall Islands
 DemoSat,FALSE,21-Mar-07,Falcon 1,DemoSAT,Kwajalein Atoll,Kwajalein Atoll Omelek Island,FALSE,Republic of the Marshall Islands
@@ -199,4 +199,3 @@ Resupply Moon,TRUE,"September 25, 2021",Falcon Heavy,Manned Crew,CCAFS SLC 40,Ca
 Ceres,TRUE,"October 31, 2022",BFR,Manned Crew,CCAFS SLC 40,Cape Canaveral Air Force Station Space Launch Complex 40,null,Florida
 Mars,TRUE,"January 1, 2022",BFR,Manned Crew,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California
 Mars,TRUE,"January 1, 2023",BFR,Manned Crew,VAFB SLC 4E,Vandenberg Air Force Base Space Launch Complex 4E,null,California
->>>>>>> 01e07bd762431d33dd91f5563cb23e80b9016b7b

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-require_relative '../lib/cli'
->>>>>>> 01e07bd762431d33dd91f5563cb23e80b9016b7b
 require 'pry'
 require 'csv'
 Rocket.destroy_all
@@ -11,11 +7,8 @@ Search.destroy_all
 
 
 # ROCKETS
-<<<<<<< HEAD
 rockets = CSV.read("resources/rockets.csv")
 
-=======
->>>>>>> 01e07bd762431d33dd91f5563cb23e80b9016b7b
 # "Falcon 1",       0 NAME
 #  "FALSE",         1 ACTIVE
 #  "6700000",       2 COST PER LAUNCH
@@ -27,10 +20,6 @@ rockets = CSV.read("resources/rockets.csv")
 #  "The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.",
 #  "falcon1"        9 ID
 
-<<<<<<< HEAD
-=======
-rockets = CSV.read("resources/rockets.csv")
->>>>>>> 01e07bd762431d33dd91f5563cb23e80b9016b7b
 Rocket.create(
     rocket_name: rockets[1][0],
     cost: rockets[1][2],
@@ -76,31 +65,6 @@ Rocket.create(
 )
 
 
-<<<<<<< HEAD
-
-
-
-
-
-
-# USERS
-
-# astronaut.map do |astro|
-#      Astronaut.create(name:astronaut_name, age: astronaut_age, favorite_rocket: favorite_rocket)
-# end
-
-
-# LAUNCHES
-launches = CSV.read("resources/launches.csv")
-
-index = 1
-while index <93
-
-    Launch.create(
-        # id: integer, 
-        # user_id: integer, 
-        rocket_id: integer, 
-=======
 # LAUNCHES
 
 # "Trailblazer",                        0 MISSION NAME
@@ -122,7 +86,6 @@ while index < launches.size
     Launch.create(
         # user_id: integer, 
         # rocket_id: integer, 
->>>>>>> 01e07bd762431d33dd91f5563cb23e80b9016b7b
         mission_name: launches[index][0],
         upcoming: launches[index][1],
         launch_date: launches[index][2],
@@ -132,41 +95,9 @@ while index < launches.size
         launch_state: launches[index][8]
         # launch_success: boolean
     )
-<<<<<<< HEAD
-    index+=1
-    
-end
-
-
-# "Trailblazer",                        0 MISSION NAME
-# "FALSE",                              1 UPCOMING
-# "2-Aug-08",                           2 LAUNCH DATE
-# "Falcon 1",                           3 ROCKET NAME
-# "Trailblazer",                        4 PAYLOAD
-# "Kwajalein Atoll",                    5 
-# "Kwajalein Atoll Omelek Island",      6 LAUNCH SITE
-# "FALSE",                              7 LAUNCH SUCCESS
-# "Republic of the Marshall Islands"    8 LAUNCH STATE
-
-
-
-
-
-
-
-
-# SEARCHES
-
-
-
-
-
-# binding.pry
-=======
     index += 1
 end
 
 
 binding.pry
 0
->>>>>>> 01e07bd762431d33dd91f5563cb23e80b9016b7b
