@@ -126,12 +126,12 @@ def future_launches
     input = gets.chomp
     if input == "y"
         
-            index = 0
-            table = Terminal::Table.new :title => "Future Launchess", :headings => ["Date", 'Mission', 'Site', "State", "Rocket"] do |t|
-                while index<Launch.future_missions.count
+            index = 1
+            table = Terminal::Table.new :title => "Future Launchess", :headings => ["Id", "Date", 'Mission', 'Site', "State", "Rocket"] do |t|
+                while index<Launch.future_missions.size
                     
                
-                t << [Launch.future_dates[index], Launch.future_missions[index], Launch.future_sites[index], Launch.future_states[index], Launch.future_rockets[index]]
+                t << [index, Launch.future_dates[index], Launch.future_missions[index], Launch.future_sites[index], Launch.future_states[index], Launch.future_rockets[index]]
                  t << :separator
                 # t.add_row [Rocket.second.rocket_name, Rocket.second.cost, "#{Rocket.second.height} ft.", "#{Rocket.second.diameter} ft.", "#{Rocket.second.mass} lb." ]
                 # t.add_separator
@@ -166,6 +166,20 @@ def future_launches
         "BYE!"
         # ask if they want to see their search
     end
+end
+
+
+
+def book_launch
+    puts "pick launch"
+    index=0
+    user_input= gets.chomp.to_i
+    index=user_input
+    table = Terminal::Table.new :title => "Future Launchess", :headings => ["Id", "Date", 'Mission', 'Site', "State", "Rocket"] do |t|
+     t << [index, Launch.future_dates[index], Launch.future_missions[index], Launch.future_sites[index], Launch.future_states[index], Launch.future_rockets[index]]
+
+    end
+    puts table
 end
 
 # binding.pry

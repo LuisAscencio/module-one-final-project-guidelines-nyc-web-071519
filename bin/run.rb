@@ -9,6 +9,7 @@ welcome
     
 create_astronaut
 future_launches
+book_launch
 
 
 
