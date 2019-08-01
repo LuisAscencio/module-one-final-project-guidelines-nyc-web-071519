@@ -78,12 +78,17 @@ def future_launches
     input = gets.chomp
     if input == "y"
         # get future flights in a table
-        puts Launch.future_missions # mission names
-        puts Launch.future_sites # launch site name
-        puts Launch.future_states # launch site state
+        mission = Launch.future_missions # mission names
+        site = Launch.future_sites # launch site name
+        state = Launch.future_states # launch site state
+
+
+        puts mission # mission names
+        puts site # launch site name
+        puts state # launch site state
     else 
         "BYE!"
-        # show search
+        # ask if they want to see their search
     end
 end
 
