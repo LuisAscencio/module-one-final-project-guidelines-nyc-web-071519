@@ -1,12 +1,9 @@
-<<<<<<< HEAD
+
 
 class Launch < ActiveRecord::Base
     belongs_to :astronaut
     belongs_to :rocket
-=======
-class Launch < ActiveRecord::Base
-    belongs_to :astronaut
-    belongs_to :rocket
+
 
     # Method to find all launches for this rocket
     # def self.all_launches(fav_rocket)
@@ -39,5 +36,4 @@ class Launch < ActiveRecord::Base
     end
 
 
->>>>>>> 01e07bd762431d33dd91f5563cb23e80b9016b7b
 end
