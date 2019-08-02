@@ -35,17 +35,17 @@ def astronaut_name
     Please enter your name:
     FR
     name = gets.chomp
-    puts "Welcome, #{name}"
 end
 
 def astronaut_age
     puts <<-FR
+    
     Please enter your age:
     FR
     input = gets.chomp
     # make sure it's an integer
     if input =~ /^-?[0-9]+$/
-        
+        input
     else
         puts "Invalid input."
         astronaut_age
@@ -54,6 +54,7 @@ end
 
 def favorite_rocket
     puts <<-FR
+
     SpaceX has 4 rockets:
         1. Falcon 1
         2. Falcon 9
@@ -67,17 +68,18 @@ def favorite_rocket
 
     case fav_rocket
     when '1' 
-        fav_rocket = Rocket.first.rocket_name
         Rocket.falcon_1
+        fav_rocket = Rocket.first.rocket_name
+        
     when '2'
-        fav_rocket = Rocket.second.rocket_name
         Rocket.falcon_9
+        fav_rocket = Rocket.second.rocket_name
     when '3'
-        fav_rocket = Rocket.third.rocket_name
         Rocket.falcon_heavy
+        fav_rocket = Rocket.third.rocket_name
     when '4'
-        fav_rocket = Rocket.fourth.rocket_name
         Rocket.bfr
+        fav_rocket = Rocket.fourth.rocket_name
     else
         puts 'Invalid entry'
         favorite_rocket
@@ -88,6 +90,7 @@ end
 
 def future_launches
     puts <<-FR
+
     Would you like to see all future launches?
         1. Yes
         2. No
@@ -123,6 +126,7 @@ end
 
 def book_launch
     puts <<-FR
+
     To book a flight pick launch number between 1 and 17.
     FR
 
@@ -132,6 +136,7 @@ def book_launch
 
     if user_input.between?(1, 17)
         puts <<-FR
+
         Congratulations! Your flight has been booked!
         Below are the flight details.
         FR
@@ -170,7 +175,10 @@ def book_launch
         n.name
     end
 
+    mates_age = 
+
     puts <<-FR
+
     Would you like to see all of the people on this flight?
     1. Yes
     2. No
@@ -179,7 +187,11 @@ def book_launch
     input = gets.chomp
     case input
     when "1"
-        puts mates
+        puts "Here are all of the people on your flight:"
+        i = 0
+        mates.each do |m|
+            puts "#{i += 1}. #{m}"
+        end
     when "2"
         puts "Thank you for booking with us! We will see you on the day of your flight!"
         exit
@@ -193,26 +205,30 @@ end
 
 def delete_search
     puts <<-FR
-    Changed your mind? Press:
-        1. To delete your flight
-        2. To keep your flight
+
+    Not happy with your flight mates? Press:
+        1. To keep your flight
+        2. To delete your flight
     FR
 
     input = gets.chomp
 
     case input
-    when "1" 
+    when "2" 
         Search.last.delete
         puts <<-FR
     Your flight has been successfully deleted.
     Goodbye!
         FR
         exit
-    else
+    when "1"    
         puts <<-FR
     We will see you on the day of your flight!
         FR
         exit
+    else
+        puts "Invalid entry"
+        delete_search
     end
 end
 
