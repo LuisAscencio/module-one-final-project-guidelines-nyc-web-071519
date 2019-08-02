@@ -6,6 +6,8 @@ require_relative "../lib/cli"
 create_astronaut
 future_launches
 book_launch
+# flight_mates
+delete_search
 
 
 

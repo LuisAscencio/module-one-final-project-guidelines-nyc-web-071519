@@ -161,20 +161,83 @@ def book_launch
         puts "Invalid entry"
         book_launch
     end 
+
+
+    mates = Search.where(future_launch_date: date).map do |n|
+        n.name
+    end
+
+    puts <<-FR
+    Would you like to see all of your flight mates?
+    1. Yes
+    2. No
+    FR
+
+    input = gets.chomp
+
+    case input
+    when "1"
+        puts mates
+    when "2"
+        puts "Thank you for booking with us! We will see you on the day of your flight!"
+        exit
+    else 
+        puts "Your entry is invalid"
+        exit
+    end
+
 end
 
-def flight_mates
-end
 
+
+# def flight_mates
+#     mates = Search.where(future_launch_date: date).map do |n|
+#         n.name
+#     end
+
+#     puts <<-FR
+#     Would you like to see all of your flight mates?
+#     1. Yes
+#     2. No
+#     FR
+
+#     input = gets.chomp
+
+#     case input
+#     when "1"
+#         puts mates
+#     when "2"
+#         puts "Thank you for booking with us! We will see you on the day of your flight!"
+#         exit
+#     else 
+#         puts "Your entry is invalid"
+#         exit
+#     end
+# end
 
 
 def delete_search
-    puts "delete? y/n"
+    puts <<-FR
+    Changed your mind? Press:
+    1. To delete your flight
+    2. To keep your flight
+    FR
+
     input = gets.chomp
-    if input == "y" 
+
+    case input
+    when "1" 
         Search.last.delete
+        puts <<-FR
+    Your flight has been successfully deleted.
+    Goodbye!
+        FR
+        exit
     else
-        puts "bye"
+        puts <<-FR
+    We will see you on the day of your flight!
+        FR
+        exit
     end
 end
 
