@@ -1,32 +1,22 @@
-# def welcome
+def welcome
 
-#     puts  <<-WELCOME
-      
-#     db   d8b   db d88888b db       .o88b.  .d88b.  .88b  d88. d88888b 
-#     88   I8I   88 88'     88      d8P  Y8 .8P  Y8. 88'YbdP`88 88'     
-#     88   I8I   88 88ooooo 88      8P      88    88 88  88  88 88ooooo 
-#     Y8   I8I   88 88~~~~~ 88      8b      88    88 88  88  88 88~~~~~ 
-#     `8b d8'8b d8' 88.     88booo. Y8b  d8 `8b  d8' 88  88  88 88.     
-#      `8b8' `8d8'  Y88888P Y88888P  `Y88P'  `Y88P'  YP  YP  YP Y88888P 
-                                                                      
-                                                                     
-#      d888888b  .d88b.  
-#      `~~88~~' .8P  Y8. 
-#         88    88    88 
-#         88    88    88 
-#         88    `8b  d8' 
-#         YP     `Y88P'  
-                       
-                     
-#     .d8888. d8888b.  .d8b.   .o88b. d88888b db    db 
-#     88'  YP 88  `8D d8' `8b d8P  Y8 88'     `8b  d8' 
-#     `8bo.   88oodD' 88ooo88 8P      88ooooo  `8bd8'  
-#       `Y8b. 88~~~   88~~~88 8b      88~~~~~  .dPYb.  
-#     db   8D 88      88   88 Y8b  d8 88.     .8P  Y8. 
-#     `8888Y' 88      YP   YP  `Y88P' Y88888P YP    YP 
+    puts  <<-WELCOME
+    
+    ================================================
+
+
+    WELCOME TO
+
+    ███████╗██████╗  █████╗  ██████╗███████╗██╗  ██╗
+    ██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝╚██╗██╔╝
+    ███████╗██████╔╝███████║██║     █████╗   ╚███╔╝ 
+    ╚════██║██╔═══╝ ██╔══██║██║     ██╔══╝   ██╔██╗ 
+    ███████║██║     ██║  ██║╚██████╗███████╗██╔╝ ██╗
+    ╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝╚══════╝╚═╝  ╚═╝
+                                                
                                                     
-#     WELCOME
-# end
+    WELCOME
+end
 
 
 
@@ -120,7 +110,7 @@ end
 
 def book_launch
     puts <<-FR
-    "To book a flight pick launch number between 1 and 18."
+    To book a flight pick launch number between 1 and 18.
     FR
 
     index = 0
@@ -174,7 +164,6 @@ def book_launch
     FR
 
     input = gets.chomp
-
     case input
     when "1"
         puts mates
