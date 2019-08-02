@@ -21,7 +21,6 @@ def welcome
     FR
 end
 
-
 def create_astronaut
     Astronaut.create(
         name: astronaut_name,
@@ -35,6 +34,14 @@ def astronaut_name
     Please enter your name:
     FR
     name = gets.chomp
+end
+
+
+def fix_name
+    puts <<-FR
+    Enter new name
+    FR
+    input = gets.chomp
 end
 
 def astronaut_age
@@ -64,13 +71,10 @@ def favorite_rocket
     FR
     fav_rocket = gets.chomp
 
-    # binding.pry
-
     case fav_rocket
     when '1' 
         Rocket.falcon_1
         fav_rocket = Rocket.first.rocket_name
-        
     when '2'
         Rocket.falcon_9
         fav_rocket = Rocket.second.rocket_name
@@ -84,9 +88,8 @@ def favorite_rocket
         puts 'Invalid entry'
         favorite_rocket
     end
-    # binding.pry
-end
 
+end
 
 def future_launches
     puts <<-FR
@@ -140,9 +143,10 @@ def book_launch
         Congratulations! Your flight has been booked!
         Below are the flight details.
         FR
-        table = Terminal::Table.new :title => "YOUR FLIGHT", :headings => ["Id", "Date", 'Mission', 'Site', "State", "Rocket"] do |t|
+        table = Terminal::Table.new :title => "YOUR FLIGHT", :headings => ["Id", "Name", "Date", 'Mission', 'Site', "State", "Rocket"] do |t|
             t << [
                 index, 
+                Astronaut.last.name,
                 Launch.future_dates[index], 
                 Launch.future_missions[index], 
                 Launch.future_sites[index], 
@@ -151,6 +155,7 @@ def book_launch
             ]
         end
 
+        name = Astronaut.last.name,
         date = Launch.future_dates[index]
         mission = Launch.future_missions[index]
         sites = Launch.future_sites[index]
@@ -166,11 +171,38 @@ def book_launch
             age: Astronaut.last.age
         )
         puts table
+
+        puts <<-FR
+
+        Is your name correct on the ticket?
+            1. Yes
+            2. No, change it
+        FR
+
+        resp = gets.chomp
+        case resp
+        when "1"
+            continue
+        when "2"
+            update_astro_name
+            table = Terminal::Table.new :title => "YOUR FLIGHT", :headings => ["Id", "Name", "Date", 'Mission', 'Site', "State", "Rocket"] do |t|
+                t << [
+                    index, 
+                    Astronaut.last.name,
+                    Launch.future_dates[index], 
+                    Launch.future_missions[index], 
+                    Launch.future_sites[index], 
+                    Launch.future_states[index], 
+                    Launch.future_rockets[index]
+                ]
+            end
+            puts table
+        end
+
     else
         puts "Invalid entry"
         book_launch
     end 
-
 
     mates = Search.where(future_launch_date: date).map do |n|
         n.name
@@ -179,8 +211,6 @@ def book_launch
     mates_age = Search.where(future_launch_date: date).map do |n|
         n.age
     end
-
-    
 
     puts <<-FR
 
@@ -225,7 +255,7 @@ end
 
 def wanna_delete
     puts <<-FR
-    
+
     Not happy with your flight mates? 
     FR
 end
@@ -260,3 +290,13 @@ def delete_search
     end
 end
 
+
+def update_astro_name
+    puts <<-FR
+    Enter correct name: 
+    FR
+
+
+    input = gets.chomp
+    Astronaut.last.update(name: input)
+end

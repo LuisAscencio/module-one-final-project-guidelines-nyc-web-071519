@@ -5,6 +5,4 @@ welcome
 create_astronaut
 future_launches
 book_launch
-# flight_mates
-# wanna_delete 
 delete_search
