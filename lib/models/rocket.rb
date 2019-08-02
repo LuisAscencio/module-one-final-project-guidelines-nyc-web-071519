@@ -58,7 +58,7 @@ class Rocket < ActiveRecord::Base
     
     
     def self.falcon_1
-        table = Terminal::Table.new :title => "#{Rocket.first.rocket_name}", :headings => ["Cost", "Height", "Diameter", "Mass"] do |t|
+        table = Terminal::Table.new :title => "#{Rocket.first.rocket_name}", :headings => ["Cost per Launch", "Height", "Diameter", "Mass"] do |t|
             t << [
                 Rocket.first.cost, 
                 "#{Rocket.first.height} ft.", 
@@ -68,7 +68,7 @@ class Rocket < ActiveRecord::Base
         end
             table2 = Terminal::Table.new  do |t|
                 
-                t<<[Rocket.first.description]
+                puts Rocket.first.description
                 t.style = {:border_top => false, :border_bottom => true }
                 t.style = {:border_x => "-", :border_i => ""}      
         end
@@ -76,7 +76,7 @@ class Rocket < ActiveRecord::Base
     end
     
     def self.falcon_9
-        table = Terminal::Table.new :title => "#{Rocket.second.rocket_name}", :headings => ["Cost", "Height", "Diameter", "Mass"] do |t|
+        table = Terminal::Table.new :title => "#{Rocket.second.rocket_name}", :headings => ["Cost per Launch", "Height", "Diameter", "Mass"] do |t|
             t << [
                 Rocket.second.cost, 
                 "#{Rocket.second.height} ft.", 
@@ -85,7 +85,7 @@ class Rocket < ActiveRecord::Base
         end
             table2 = Terminal::Table.new  do |t|
                 
-                t<<[Rocket.second.description]
+                puts Rocket.second.description
                 t.style = {:border_top => false, :border_bottom => true }
                 t.style = {:border_x => "-", :border_i => ""} 
         end
@@ -94,7 +94,7 @@ class Rocket < ActiveRecord::Base
  
     def self.falcon_heavy
     
-        table = Terminal::Table.new :title => "#{Rocket.third.rocket_name}", :headings => ["Cost", "Height", "Diameter", "Mass"] do |t|
+        table = Terminal::Table.new :title => "#{Rocket.third.rocket_name}", :headings => ["Cost per Launch", "Height", "Diameter", "Mass"] do |t|
             t << [
                 Rocket.third.cost, 
                 "#{Rocket.third.height} ft.", 
@@ -104,7 +104,7 @@ class Rocket < ActiveRecord::Base
         end
             table2 = Terminal::Table.new  do |t|
                 
-                t<<[Rocket.third.description]
+                puts Rocket.third.description
                 t.style = {:border_top => false, :border_bottom => true }
                 t.style = {:border_x => "-", :border_i => ""}
                     
@@ -114,7 +114,7 @@ class Rocket < ActiveRecord::Base
     
     
     def self.bfr
-        table = Terminal::Table.new :title => "#{Rocket.fourth.rocket_name}", :headings => ["Cost", "Height", "Diameter", "Mass"] do |t|
+        table = Terminal::Table.new :title => "#{Rocket.fourth.rocket_name}", :headings => ["Cost per Launch", "Height", "Diameter", "Mass"] do |t|
             t << [
                 Rocket.fourth.cost, 
                 "#{Rocket.fourth.height} ft.", 
@@ -124,7 +124,7 @@ class Rocket < ActiveRecord::Base
         end
             table2 = Terminal::Table.new  do |t|
                 
-                t<<[Rocket.fourth.description]
+                puts Rocket.fourth.description
                 t.style = {:border_top => false, :border_bottom => true }
                 t.style = {:border_x => "-", :border_i => ""}
                     

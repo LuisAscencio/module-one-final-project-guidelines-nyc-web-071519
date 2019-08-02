@@ -17,8 +17,10 @@ def welcome
     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
                                                     
     WELCOME
+    puts <<-FR
+    Hello, future astronaut! 
+    FR
 end
-
 
 
 def create_astronaut
@@ -31,10 +33,10 @@ end
 
 def astronaut_name
     puts <<-FR
-    Hello, future astronaut! 
     Please enter your name:
     FR
     name = gets.chomp
+    puts "Welcome, #{name}"
 end
 
 def astronaut_age
@@ -43,6 +45,12 @@ def astronaut_age
     FR
     input = gets.chomp
     # make sure it's an integer
+    if input =~ /^-?[0-9]+$/
+        
+    else
+        puts "Invalid input."
+        astronaut_age
+    end
 end
 
 def favorite_rocket
@@ -52,7 +60,7 @@ def favorite_rocket
         2. Falcon 9
         3. Falcon Heavy
         4. BFR
-    Use numbers 1 through 4 to pick your favorite rocket
+    Use numbers 1 through 4 to pick your favorite rocket and learn more about it.
     FR
     fav_rocket = gets.chomp
 
@@ -61,12 +69,16 @@ def favorite_rocket
     case fav_rocket
     when '1' 
         fav_rocket = Rocket.first.rocket_name
+        Rocket.falcon_1
     when '2'
         fav_rocket = Rocket.second.rocket_name
+        Rocket.falcon_9
     when '3'
         fav_rocket = Rocket.third.rocket_name
+        Rocket.falcon_heavy
     when '4'
         fav_rocket = Rocket.fourth.rocket_name
+        Rocket.bfr
     else
         puts 'Invalid entry'
         favorite_rocket
@@ -180,33 +192,6 @@ def book_launch
 end
 
 
-
-# def flight_mates
-#     mates = Search.where(future_launch_date: date).map do |n|
-#         n.name
-#     end
-
-#     puts <<-FR
-#     Would you like to see all of your flight mates?
-#     1. Yes
-#     2. No
-#     FR
-
-#     input = gets.chomp
-
-#     case input
-#     when "1"
-#         puts mates
-#     when "2"
-#         puts "Thank you for booking with us! We will see you on the day of your flight!"
-#         exit
-#     else 
-#         puts "Your entry is invalid"
-#         exit
-#     end
-# end
-
-
 def delete_search
     puts <<-FR
     Changed your mind? Press:
@@ -234,68 +219,4 @@ end
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def future_launches
-#     puts "Would you like to see all future launches?"
-#     puts "y/n"
-#     input = gets.chomp
-#     if input == "y"
-#         # get future flights in a table
-#         # puts Launch.future_missions # mission names
-#         # puts Launch.future_sites # launch site name
-#         # puts Launch.future_states # launch site state
-#         # puts Launch.future_dates # launch date
-
-#         # mission = Launch.future_missions # mission names
-#         # site = Launch.future_sites # launch site name
-#         # state = Launch.future_states # launch site state
-#         # date = Launch.future_dates # launch date
-
-#         # puts mission # mission names
-#         # puts site # launch site name
-#         # puts state # launch site state
-#         # puts date # launch date
-#     else 
-#         puts "BYE!"
-#         # ask if they want to see their search
-#     end
-# end
-
-# binding.pry
-# 0
-
-# def create_search
-#     Search.create(
-#         stronaut_id: get_id
-#         future_launch_date: date,
-#         future_launch_site: site,
-#         favorite_rocket: favorite_rocket,
-#         name: astronaut_name
-#     )
-# end
-
-
-
-
-
-
-# def book_flight
-#     puts "Here are all of the upcoming flights."
-
-# end
 
