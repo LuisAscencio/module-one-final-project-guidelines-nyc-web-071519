@@ -1,9 +1,9 @@
 def welcome
 
     puts  <<-WELCOME
-    
-    ================================================
 
+    ================================================
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
     WELCOME TO
 
@@ -13,7 +13,8 @@ def welcome
     ╚════██║██╔═══╝ ██╔══██║██║     ██╔══╝   ██╔██╗ 
     ███████║██║     ██║  ██║╚██████╗███████╗██╔╝ ██╗
     ╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝╚══════╝╚═╝  ╚═╝
-                                                
+       
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
                                                     
     WELCOME
 end
@@ -40,7 +41,8 @@ def astronaut_age
     puts <<-FR
     Please enter your age:
     FR
-    gets.chomp
+    input = gets.chomp
+    # make sure it's an integer
 end
 
 def favorite_rocket
@@ -110,7 +112,7 @@ end
 
 def book_launch
     puts <<-FR
-    To book a flight pick launch number between 1 and 18.
+    To book a flight pick launch number between 1 and 17.
     FR
 
     index = 0
@@ -158,7 +160,7 @@ def book_launch
     end
 
     puts <<-FR
-    Would you like to see all of your flight mates?
+    Would you like to see all of the people on this flight?
     1. Yes
     2. No
     FR
@@ -208,8 +210,8 @@ end
 def delete_search
     puts <<-FR
     Changed your mind? Press:
-    1. To delete your flight
-    2. To keep your flight
+        1. To delete your flight
+        2. To keep your flight
     FR
 
     input = gets.chomp
