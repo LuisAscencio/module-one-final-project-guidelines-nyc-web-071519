@@ -39,13 +39,13 @@ end
 
 def astronaut_age
     puts <<-FR
-    
+
     Please enter your age:
     FR
     input = gets.chomp
     # make sure it's an integer
     if input =~ /^-?[0-9]+$/
-        input
+        input.to_i
     else
         puts "Invalid input."
         astronaut_age
@@ -162,7 +162,8 @@ def book_launch
             future_launch_date: date,
             future_launch_site: sites,
             favorite_rocket: Astronaut.last.favorite_rocket,
-            name: Astronaut.last.name
+            name: Astronaut.last.name,
+            age: Astronaut.last.age
         )
         puts table
     else
@@ -175,13 +176,18 @@ def book_launch
         n.name
     end
 
-    mates_age = 
+    mates_age = Search.where(future_launch_date: date).map do |n|
+        n.age
+    end
+
+    
 
     puts <<-FR
 
-    Would you like to see all of the people on this flight?
-    1. Yes
-    2. No
+    Would you like to see all of the people on this flight or cancel this flight?
+        1. Yes
+        2. No
+        3. Cancel flight
     FR
 
     input = gets.chomp
@@ -189,12 +195,27 @@ def book_launch
     when "1"
         puts "Here are all of the people on your flight:"
         i = 0
-        mates.each do |m|
-            puts "#{i += 1}. #{m}"
+        list = Terminal::Table.new :title => "Flight Mates", :headings => ["Name", "Age" ] do |t|
+            while i < mates.count
+                t << [
+                    mates[i], 
+                    mates_age[i]
+                ]
+                # t << :separator
+                i += 1
+            end
+            
         end
+        puts list
+        wanna_delete
+        delete_search
+
     when "2"
         puts "Thank you for booking with us! We will see you on the day of your flight!"
-        exit
+        delete_search
+        # exit
+    when "3"
+        delete_search
     else 
         puts "Your entry is invalid"
         exit
@@ -202,11 +223,17 @@ def book_launch
 
 end
 
+def wanna_delete
+    puts <<-FR
+    
+    Not happy with your flight mates? 
+    FR
+end
 
 def delete_search
     puts <<-FR
 
-    Not happy with your flight mates? Press:
+    Press:
         1. To keep your flight
         2. To delete your flight
     FR
@@ -223,7 +250,8 @@ def delete_search
         exit
     when "1"    
         puts <<-FR
-    We will see you on the day of your flight!
+    We will see you on the day of your flight! 
+    
         FR
         exit
     else
@@ -231,7 +259,4 @@ def delete_search
         delete_search
     end
 end
-
-
-
 
