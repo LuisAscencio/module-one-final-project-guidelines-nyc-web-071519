@@ -8,7 +8,6 @@ class Launch < ActiveRecord::Base
     # end
 
 
-
     # get future flights
     def self.future_missions
         all_missions = Launch.where(upcoming: true)
@@ -39,4 +38,10 @@ class Launch < ActiveRecord::Base
         end
     end
 
+    def self.future_rockets
+        all_states = Launch.where(upcoming: true)
+        all_states.map do |launch|
+            launch.rocket_name
+        end
+    end
 end

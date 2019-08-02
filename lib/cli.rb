@@ -38,16 +38,18 @@ def create_astronaut
     )
 end
 
-
-
-    
 def astronaut_name
-    puts "Please enter your name:"
-    gets.chomp
+    puts <<-FR
+    Hello, future astronaut! 
+    Please enter your name:
+    FR
+    name = gets.chomp
 end
 
 def astronaut_age
-    puts "Please enter your age:"
+    puts <<-FR
+    Please enter your age:
+    FR
     gets.chomp
 end
 
@@ -75,43 +77,157 @@ def favorite_rocket
         fav_rocket = Rocket.fourth.rocket_name
     else
         puts 'Invalid entry'
+        favorite_rocket
     end
-    
     # binding.pry
 end
 
+
 def future_launches
-    puts "Would you like to see all future launches?"
-    puts "y/n"
+    puts <<-FR
+    Would you like to see all future launches?
+        1. Yes
+        2. No
+    FR
     input = gets.chomp
-    if input == "y"
-        # get future flights in a table
-        # puts Launch.future_missions # mission names
-        # puts Launch.future_sites # launch site name
-        # puts Launch.future_states # launch site state
-        # puts Launch.future_dates # launch date
 
-        # mission = Launch.future_missions # mission names
-        # site = Launch.future_sites # launch site name
-        # state = Launch.future_states # launch site state
-        # date = Launch.future_dates # launch date
-
-        # puts mission # mission names
-        # puts site # launch site name
-        # puts state # launch site state
-        # puts date # launch date
-    else 
+    case input
+    when "1"
+        index = 1
+        table = Terminal::Table.new :title => "FUTURE LAUHCHES", :headings => ["Id", "Date", 'Mission', 'Site', "State", "Rocket"] do |t|
+            while index < Launch.future_missions.size
+                t << [
+                    index, 
+                    Launch.future_dates[index], 
+                    Launch.future_missions[index], 
+                    Launch.future_sites[index], 
+                    Launch.future_states[index], 
+                    Launch.future_rockets[index]
+                ]
+                # t << :separator
+                index += 1
+            end
+        end
+        puts table
+    when "2" 
         puts "BYE!"
-        # ask if they want to see their search
+        exit
+    else
+        puts "Invalid entry"
+        future_launches
     end
 end
+
+def book_launch
+    puts <<-FR
+    "To book a flight pick launch number between 1 and 18."
+    FR
+
+    index = 0
+    user_input = gets.chomp.to_i
+    index = user_input
+
+    if user_input.between?(1, 17)
+        puts <<-FR
+        Congratulations! Your flight has been booked!
+        Below are the flight details.
+        FR
+        table = Terminal::Table.new :title => "YOUR FLIGHT", :headings => ["Id", "Date", 'Mission', 'Site', "State", "Rocket"] do |t|
+            t << [
+                index, 
+                Launch.future_dates[index], 
+                Launch.future_missions[index], 
+                Launch.future_sites[index], 
+                Launch.future_states[index], 
+                Launch.future_rockets[index]
+            ]
+        end
+
+        date = Launch.future_dates[index]
+        mission = Launch.future_missions[index]
+        sites = Launch.future_sites[index]
+        state = Launch.future_states[index]
+        rocket = Launch.future_rockets[index]
+
+        Search.create(
+            astronaut_id: Astronaut.last.id,
+            future_launch_date: date,
+            future_launch_site: sites,
+            favorite_rocket: Astronaut.last.favorite_rocket,
+            name: Astronaut.last.name
+        )
+        puts table
+    else
+        puts "Invalid entry"
+        book_launch
+    end 
+end
+
+def flight_mates
+end
+
+
+
+def delete_search
+    puts "delete? y/n"
+    input = gets.chomp
+    if input == "y" 
+        Search.last.delete
+    else
+        puts "bye"
+    end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def future_launches
+#     puts "Would you like to see all future launches?"
+#     puts "y/n"
+#     input = gets.chomp
+#     if input == "y"
+#         # get future flights in a table
+#         # puts Launch.future_missions # mission names
+#         # puts Launch.future_sites # launch site name
+#         # puts Launch.future_states # launch site state
+#         # puts Launch.future_dates # launch date
+
+#         # mission = Launch.future_missions # mission names
+#         # site = Launch.future_sites # launch site name
+#         # state = Launch.future_states # launch site state
+#         # date = Launch.future_dates # launch date
+
+#         # puts mission # mission names
+#         # puts site # launch site name
+#         # puts state # launch site state
+#         # puts date # launch date
+#     else 
+#         puts "BYE!"
+#         # ask if they want to see their search
+#     end
+# end
 
 # binding.pry
 # 0
 
 # def create_search
 #     Search.create(
-#         # astronaut_id: get_id
+#         stronaut_id: get_id
 #         future_launch_date: date,
 #         future_launch_site: site,
 #         favorite_rocket: favorite_rocket,
